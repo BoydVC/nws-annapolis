@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>NWS Annapolis · Weather Board</title>
 <meta name="theme-color" content="#0b3d91">
-<meta name="description" content="Live National Weather Service forecast board for Annapolis / Millersville — hourly and 7-day from api.weather.gov, with alerts. Offline TokenMax snapshot.">
+<meta name="description" content="Live National Weather Service forecast board for Annapolis / Lakeside — hourly and 7-day from api.weather.gov, with alerts. Offline TokenMax snapshot.">
 <style>/*__CSS__*/</style>
 </head>
 <body>
@@ -29,7 +29,7 @@
     </div>
     <div>
       <h1>NWS Annapolis</h1>
-      <p class="tag">Annapolis · Millersville · api.weather.gov snapshot</p>
+      <p class="tag">Annapolis · Lakeside · api.weather.gov snapshot</p>
     </div>
   </div>
   <div class="top-actions">
@@ -38,7 +38,7 @@
     <label class="loc-switch" title="Location">
       <select id="locSelect" aria-label="Location">
         <option value="annapolis">Annapolis</option>
-        <option value="millersville">Millersville</option>
+        <option value="millersville">Lakeside</option>
       </select>
     </label>
   </div>
@@ -60,11 +60,11 @@
   <section id="view-about" class="view" role="tabpanel">
     <div class="panel">
       <h2 class="view-title">About</h2>
-      <p class="lede">Offline forecast board built for Boyd’s TokenMax burn. Numbers come from the National Weather Service (<code>api.weather.gov</code>) at build time — never invented.</p>
+      <p class="lede">Offline forecast board built for Alex’s TokenMax burn. Numbers come from the National Weather Service (<code>api.weather.gov</code>) at build time — never invented.</p>
       <ul class="about-list">
-        <li><strong>Points:</strong> Annapolis 38.9784,−76.4922 · Millersville 39.0596,−76.6477</li>
+        <li><strong>Points:</strong> Annapolis 38.9784,−76.4922 · Lakeside 39.0596,−76.6477</li>
         <li><strong>Office:</strong> NWS Baltimore/Washington (LWX)</li>
-        <li><strong>User-Agent:</strong> TokenMaxWeather/1.0 (Boyd local; contact: local)</li>
+        <li><strong>User-Agent:</strong> TokenMaxWeather/1.0 (Alex local; contact: local)</li>
         <li><strong>Offline:</strong> UI reads the embedded <code>data/forecast.json</code> snapshot. Re-run <code>python3 build.py</code> (or <code>./run.sh</code>) to refresh.</li>
         <li>If a live fetch fails, the shipped board is labeled <strong>EXAMPLE</strong> and the README notes the failure.</li>
       </ul>
