@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "api.weather.gov",
-    "userAgent": "TokenMaxWeather/1.0 (Boyd local; contact: local)",
+    "userAgent": "TokenMaxWeather/1.0 (Alex local; contact: local)",
     "snapshotAt": "2026-10-11T20:47:08.731569-04:00",
     "snapshotAtLabel": "Sun Oct 11, 2026 · 8:47 PM ET",
     "isExample": false,
@@ -927,10 +927,10 @@
     },
     {
       "id": "millersville",
-      "label": "Millersville",
+      "label": "Lakeside",
       "lat": 39.0596,
       "lon": -76.6477,
-      "cityNote": "near Odenton / Millersville, MD",
+      "cityNote": "near Odenton / Lakeside, MD",
       "gridId": "LWX",
       "gridX": 109,
       "gridY": 80,

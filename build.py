@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch NWS Annapolis/Millersville forecast, save data/forecast.json, build dist."""
+"""Fetch NWS Annapolis/Lakeside forecast, save data/forecast.json, build dist."""
 import json
 import os
 import urllib.error
@@ -9,7 +9,7 @@ from zoneinfo import ZoneInfo
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ET = ZoneInfo("America/New_York")
-UA = "TokenMaxWeather/1.0 (Boyd local; contact: local)"
+UA = "TokenMaxWeather/1.0 (Alex local; contact: local)"
 TIMEOUT = 20
 
 POINTS = [
@@ -22,10 +22,10 @@ POINTS = [
     },
     {
         "id": "millersville",
-        "label": "Millersville",
+        "label": "Lakeside",
         "lat": 39.0596,
         "lon": -76.6477,
-        "cityNote": "near Odenton / Millersville, MD",
+        "cityNote": "near Odenton / Lakeside, MD",
     },
 ]
 
@@ -124,10 +124,10 @@ def example_payload(reason):
             },
             {
                 "id": "millersville",
-                "label": "Millersville",
+                "label": "Lakeside",
                 "lat": 39.0596,
                 "lon": -76.6477,
-                "cityNote": "Millersville, MD — EXAMPLE only",
+                "cityNote": "Lakeside, MD — EXAMPLE only",
                 "gridId": "LWX",
                 "gridX": 109,
                 "gridY": 80,
